@@ -1,0 +1,158 @@
+/* Testimonial */
+.testimonial {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .ref_msg {
+            margin-bottom: 60px;
+            text-align: center;
+            max-width: 555px;
+            .title {
+                max-width: 383px;
+                margin: 0 auto;
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 50px;
+                color: $bigTextColor;
+            }
+            .description {
+                margin-top: 20px;
+                line-height: 30px;
+                color: $smallTextColor;
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .boxes {
+            width: inherit;
+            .swiper-wrapper {
+                .box {
+                    width: 400px;
+                    height: 230px;
+                    border-radius: 10px;
+                    border: 2px solid #DDDDDD;
+                    padding: 30px;
+                    &__header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        &__left {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            .customer-info {
+                                margin-left: 20px;
+                                .name {
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    color: $bigTextColor;
+                                }
+                                .location {
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: $smallTextColor;
+                                }
+                            }
+                        }
+                        &__right {
+                            display: flex;
+                            align-items: center;
+                            .rate {
+                                font-size: 16px;
+                                line-height: 30px;
+                                color: $bigTextColor;
+                            }
+                            img {
+                                margin-left: 10px;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                    &__body {
+                        width: 340px;
+                        height: 100px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: $bigTextColor;
+                        // margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .slider_button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 60px;
+            .left_button {
+                display: flex;
+                align-items: center;
+                .swiper-pagination-bullet {
+                    opacity: 1;
+                }
+                .dot {
+                    display: flex;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: #DDE0E4;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    &.swiper-pagination-bullet-active {
+                        width: 45px;
+                        height: 15px;
+                        border-radius: 15px;
+                        background-color: $mainColor;
+                    }
+
+                    &:hover {
+                        background-color: $mainColor;
+                    }
+                }
+            }
+            .right_button {
+                display: flex;
+                align-items: center;
+                .prev, .next {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+
+                .prev {
+                    border: 2px solid $mainColor;
+                    margin-right: 20px;
+                }
+
+                .next {
+                    background-color: $mainColor;
+                    svg {
+                        transform: rotate(180deg);
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

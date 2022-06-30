@@ -1,0 +1,64 @@
+footer {
+    padding-top: 150px;
+    background-color: #f8f8f8;
+    .container {
+        display: flex;
+        align-items: center;
+        height: 280px;
+        .footer_left {
+            flex: 0 0 30%;
+            .logo {}
+            .subtext {
+                margin: 20px 0 30px 0;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+                color: $smallTextColor;
+                span {
+                    color: $bigTextColor;
+                }
+            }
+            .social_icons {
+                display: flex;
+                width: 66px;
+                height: 66px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .copyright {
+                line-height: 30px;
+                color: #AFB5C0;
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .footer_right {
+            display: flex;
+            justify-content: flex-end;
+            flex: 0 0 70%;
+            .product, .engage, .earn {
+                flex: 0 0 25%;
+                display: flex;
+                flex-direction: column;
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: $bigTextColor;
+                    margin-bottom: 10px;
+                }
+                a {
+                    line-height: 30px;
+                    color: $smallTextColor;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

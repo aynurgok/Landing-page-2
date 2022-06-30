@@ -1,0 +1,52 @@
+/* 
+    Header dosyamız
+*/
+header {
+    margin-top: 50px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .menu{
+            margin: 0 auto;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 40px;
+                    }
+                    a {
+                        font-weight: 400;
+                        line-height: 19px;
+                        color: $smallTextColor;
+                    }
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            .sign_in {
+                font-weight: 500;
+                line-height: 19px;
+                color: $bigTextColor;
+            }
+
+            button {
+                background-color: transparent;
+                width: 150px;
+                height: 45px;
+                border: 1px solid $mainColor;
+                color: $mainColor;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                border-radius: 50px;
+                margin-left: 30px;
+            }
+
+        }
+    }
+}
